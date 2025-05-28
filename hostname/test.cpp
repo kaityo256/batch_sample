@@ -10,6 +10,6 @@ int main(int argc, char**argv){
   char hostname[256];
   gethostname(hostname, sizeof(hostname));
   printf("%02d / %02d at %s\n",rank, procs, hostname);
-  sleep(10);
+  sleep(5);
   MPI_Finalize();
 }
